@@ -33,8 +33,8 @@ export default function About() {
           <div className="lg:w-1/2">
             <h3 className="my-4 text-3xl font-bold">Um pouco sobre mim</h3>
             <p className="text-justify text-xl leading-8 text-gray-600">
-              Sou um Desenvolvedor de Softwaree apaixonado por tecnologia. Eu
-              construo Aplicações Web focado em extrair e implementar as
+              Sou um Desenvolvedor de Softwaree apaixonado por tecnologia.
+              Construo Aplicações Web focado em extrair e implementar as
               melhores ideias. Você pode conferir alguns dos meus Projetos na
               próxima seção. Também estou no{" "}
               <a
