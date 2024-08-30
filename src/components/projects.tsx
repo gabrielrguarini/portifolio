@@ -73,7 +73,7 @@ export default function Projects() {
               <div className="flex h-full flex-col justify-between gap-8">
                 <div>
                   <h3 className="text-3xl font-bold">{project.name}</h3>
-                  <p className="py-4 leading-6 text-gray-600">
+                  <p className="py-4 text-justify leading-6 text-gray-600">
                     {project.description}
                   </p>
                   <ul
