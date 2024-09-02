@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body id="INICIO" className={`!scroll-smooth ${inter.className}`}>
+      <body
+        id="INICIO"
+        className={`!scroll-smooth ${inter.className} scrollbar scrollbar-track-inherit scrollbar-thumb-blue-700 scrollbar-w-2 scrollbar-thumb-rounded-full`}
+      >
         {children}
       </body>
     </html>
