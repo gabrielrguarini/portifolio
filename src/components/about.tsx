@@ -29,7 +29,7 @@ export default function About() {
             atuais em programação.
           </p>
         </div>
-        <div className="m-2 flex flex-col gap-14 p-2 lg:m-8 lg:flex-row">
+        <div className="flex flex-col gap-14 lg:m-8 lg:flex-row">
           <div className="lg:w-1/2">
             <h3 className="my-4 text-3xl font-bold">Um pouco sobre mim</h3>
             <p className="text-justify text-xl leading-8 text-gray-600">

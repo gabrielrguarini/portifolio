@@ -5,7 +5,7 @@ export default function Projects() {
     {
       name: "Mimica",
       description:
-        "Um jogo de mímica em que a proposta é se divertir com os amigos. Nele duas equipes são formadas e palavras são mostradas aleatoriamente na tela o objetivo é que seu time acerte a palavra pela mímica. Foi desenvolvido no modo Dark e Light em que o usuário pode escolher e também pode customizar o tempo máximo para se fazer a mímica.",
+        "Um jogo de mímica em que a proposta é se divertir com os amigos. Nele duas equipes são formadas e palavras são mostradas aleatoriamente na tela o objetivo é que seu time acerte a palavra pela mímica. Foi desenvolvido de modo que o usuário pode escolher entre os temas Dark e Light e também customizar o tempo máximo para se fazer a mímica.",
       img: "/mimica.avif",
       link: "https://mimica-five.vercel.app/",
       github: "https://github.com/gabrielrguarini/mimica",
@@ -54,7 +54,7 @@ export default function Projects() {
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1000"
-            className="m-2 my-16 flex flex-col py-4 lg:mb-40 lg:min-h-[416px] lg:flex-row lg:gap-8"
+            className="my-16 flex flex-col py-4 lg:mb-40 lg:min-h-[416px] lg:flex-row lg:gap-8"
           >
             <div className="relative select-none max-lg:h-[300px] lg:w-2/3">
               <Image

@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <main className="flex min-h-screen flex-col items-center justify-between scroll-smooth">
         <section
-          className="mt-32 flex h-screen flex-col"
+          className="mt-32 flex h-screen flex-col p-4"
           data-aos="zoom-out-down"
           data-aos-duration="500"
         >
