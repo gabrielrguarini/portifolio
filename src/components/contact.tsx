@@ -7,7 +7,7 @@ const Toast = () => {
     <div
       data-os="toast"
       data-os-position="bottom-right"
-      className="animate-appear fixed bottom-8 right-4 rounded-md bg-green-500 p-4 text-white opacity-0"
+      className="fixed bottom-8 right-4 animate-appear rounded-md bg-green-500 p-4 text-white opacity-0"
     >
       Email Copiado
     </div>
@@ -43,27 +43,29 @@ export default function Contact() {
             size={80}
           />
         </a>
-        <MailIcon
-          className="cursor-pointer duration-300 hover:-translate-y-2 hover:scale-110 hover:text-blue-700"
-          size={80}
-          onClick={(e) => {
-            //Copia gabrielrguarini@gmail.com para área de transferencia
-            navigator.clipboard
-              .writeText("gabrielrguarini@gmail.com")
-              .then(() => {
-                //Exibe mensagem de sucesso
-                setIsCopy(true);
-                setTimeout(() => {
-                  setIsCopy(false);
-                }, 3000);
-              })
-              .catch((err) => {
-                //Exibe mensagem de erro
-                console.error("Erro ao copiar email:", err);
-              });
-            e.stopPropagation();
-          }}
-        />
+        <a href="">
+          <MailIcon
+            className="cursor-pointer duration-300 hover:-translate-y-2 hover:scale-110 hover:text-blue-700"
+            size={80}
+            onClick={(e) => {
+              //Copia gabrielrguarini@gmail.com para área de transferencia
+              navigator.clipboard
+                .writeText("gabrielrguarini@gmail.com")
+                .then(() => {
+                  //Exibe mensagem de sucesso
+                  setIsCopy(true);
+                  setTimeout(() => {
+                    setIsCopy(false);
+                  }, 3000);
+                })
+                .catch((err) => {
+                  //Exibe mensagem de erro
+                  console.error("Erro ao copiar email:", err);
+                });
+              e.stopPropagation();
+            }}
+          />
+        </a>
       </div>
     </section>
   );
