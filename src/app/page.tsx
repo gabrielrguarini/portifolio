@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Header />
       <main className="flex min-h-screen flex-col items-center justify-between overflow-x-hidden scroll-smooth">
-        <div className="bg-hero w-screen bg-cover bg-fixed bg-no-repeat">
+        <div className="w-screen bg-hero bg-cover bg-fixed bg-no-repeat">
           <section
             className="flex h-screen flex-col p-4"
             data-aos="zoom-out-down"

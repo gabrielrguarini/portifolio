@@ -40,7 +40,7 @@ export default function Projects() {
   return (
     <section
       id="PROJETOS"
-      className="min-h-screen w-full scroll-mt-9 p-4 sm:scroll-mt-0 lg:p-24"
+      className="min-h-screen w-full scroll-mt-10 p-4 sm:scroll-mt-0 lg:p-24"
     >
       <div className="text-center">
         <h2 className="text-center text-4xl font-bold">PROJETOS</h2>

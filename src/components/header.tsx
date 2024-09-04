@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-white p-4 font-bold">
+    <header className="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-white p-4 font-bold shadow-sm">
       <Link
         className="group flex font-extrabold duration-500 ease-out hover:scale-95 lg:text-3xl"
         href={"#"}
@@ -30,46 +30,51 @@ export default function Header() {
           {isOpen ? <X /> : <Menu />}
         </button>
         {isOpen && (
-          <ul className="animate-menu fixed right-0 top-14 w-screen list-none bg-white px-4 text-end sm:hidden">
-            <li
-              onClick={() => setIsOpen(false)}
-              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
-            >
-              <Link href={"#INICIO"}>INICIO</Link>
-            </li>
-            <li
-              onClick={() => setIsOpen(false)}
-              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
-            >
-              <Link href={"#SOBRE"}>SOBRE</Link>
-            </li>
-            <li
-              onClick={() => setIsOpen(false)}
-              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
-            >
-              <Link href={"#PROJETOS"}>PROJETOS</Link>
-            </li>
-            <li
-              onClick={() => setIsOpen(false)}
-              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
-            >
-              <Link href={"#CONTATO"}>CONTATO</Link>
-            </li>
+          <ul className="fixed right-0 top-14 w-screen animate-menu list-none bg-white px-4 text-end shadow sm:hidden">
+            <Link href={"#INICIO"}>
+              <li
+                onClick={() => setIsOpen(false)}
+                className="border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+              >
+                INICIO
+              </li>
+            </Link>
+
+            <Link href={"#SOBRE"}>
+              <li
+                onClick={() => setIsOpen(false)}
+                className="border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+              >
+                SOBRE
+              </li>
+            </Link>
+            <Link href={"#PROJETOS"}>
+              <li
+                onClick={() => setIsOpen(false)}
+                className="border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+              >
+                PROJETOS
+              </li>
+            </Link>
+            <Link href={"#CONTATO"}>
+              <li
+                onClick={() => setIsOpen(false)}
+                className="border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+              >
+                CONTATO
+              </li>
+            </Link>
           </ul>
         )}
       </div>
       <nav className="hidden sm:block">
         <ul className="flex gap-4 font-extrabold lg:text-xl">
           <li className="duration-200 hover:text-blue-700">
-            <Link className="scroll-smooth" href={"#INICIO"}>
-              INICIO
-            </Link>
+            <Link href={"#INICIO"}>INICIO</Link>
           </li>
 
           <li className="duration-200 hover:text-blue-700">
-            <Link className="scroll-smooth" href={"#SOBRE"}>
-              SOBRE
-            </Link>
+            <Link href={"#SOBRE"}>SOBRE</Link>
           </li>
           <li className="duration-200 hover:text-blue-700">
             <Link href={"#PROJETOS"}>PROJETOS</Link>
