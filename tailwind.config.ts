@@ -16,8 +16,19 @@ const config: Config = {
       },
       animation: {
         appear: "appear 3s linear",
+        menu: "menu 0.2s ease-in-out",
       },
       keyframes: {
+        menu: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-80%) scaleY(0)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0%) scaleY(1)",
+          },
+        },
         appear: {
           "0%": {
             opacity: "0",

@@ -30,7 +30,7 @@ export default function Header() {
           {isOpen ? <X /> : <Menu />}
         </button>
         {isOpen && (
-          <ul className="fixed right-0 top-14 w-screen list-none bg-white px-4 text-end sm:hidden">
+          <ul className="animate-menu fixed right-0 top-14 w-screen list-none bg-white px-4 text-end sm:hidden">
             <li
               onClick={() => setIsOpen(false)}
               className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
