@@ -31,16 +31,28 @@ export default function Header() {
         </button>
         {isOpen && (
           <ul className="fixed right-0 top-14 w-screen list-none bg-white px-4 text-end sm:hidden">
-            <li className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700">
+            <li
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+            >
               <Link href={"#INICIO"}>INICIO</Link>
             </li>
-            <li className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700">
+            <li
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+            >
               <Link href={"#SOBRE"}>SOBRE</Link>
             </li>
-            <li className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700">
+            <li
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+            >
               <Link href={"#PROJETOS"}>PROJETOS</Link>
             </li>
-            <li className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700">
+            <li
+              onClick={() => setIsOpen(false)}
+              className="cursor-pointer border-t-[1px] border-gray-100 py-4 duration-200 hover:text-blue-700"
+            >
               <Link href={"#CONTATO"}>CONTATO</Link>
             </li>
           </ul>

@@ -38,7 +38,10 @@ export default function Projects() {
     },
   ];
   return (
-    <section id="PROJETOS" className="min-h-screen w-full p-4 lg:p-24">
+    <section
+      id="PROJETOS"
+      className="min-h-screen w-full scroll-mt-9 p-4 lg:p-24"
+    >
       <div className="text-center">
         <h2 className="text-center text-4xl font-bold">PROJETOS</h2>
         <div className="mx-auto my-2 h-1 w-10 rounded-full bg-blue-700"></div>

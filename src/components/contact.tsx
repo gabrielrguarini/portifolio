@@ -17,7 +17,10 @@ const Toast = () => {
 export default function Contact() {
   const [isCopy, setIsCopy] = useState(false);
   return (
-    <section id="CONTATO" className="min-h-screen w-full p-4 lg:p-24">
+    <section
+      id="CONTATO"
+      className="min-h-screen w-full scroll-mt-9 p-4 lg:p-24"
+    >
       {isCopy && <Toast />}
       <div className="text-center">
         <h2 className="text-center text-4xl font-bold">CONTATO</h2>
@@ -48,18 +51,15 @@ export default function Contact() {
             className="cursor-pointer duration-300 hover:-translate-y-2 hover:scale-110 hover:text-blue-700"
             size={80}
             onClick={(e) => {
-              //Copia gabrielrguarini@gmail.com para área de transferencia
               navigator.clipboard
                 .writeText("gabrielrguarini@gmail.com")
                 .then(() => {
-                  //Exibe mensagem de sucesso
                   setIsCopy(true);
                   setTimeout(() => {
                     setIsCopy(false);
                   }, 3000);
                 })
                 .catch((err) => {
-                  //Exibe mensagem de erro
                   console.error("Erro ao copiar email:", err);
                 });
               e.stopPropagation();
