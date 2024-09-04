@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <section
       id="CONTATO"
-      className="min-h-screen w-full scroll-mt-9 p-4 lg:p-24"
+      className="min-h-screen w-full scroll-mt-9 p-4 sm:scroll-mt-0 lg:p-24"
     >
       {isCopy && <Toast />}
       <div className="text-center">

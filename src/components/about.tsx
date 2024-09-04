@@ -21,7 +21,7 @@ export default function About() {
   return (
     <section
       id="SOBRE"
-      className="min-h-screen scroll-mt-9 bg-white p-4 lg:p-24"
+      className="min-h-screen scroll-mt-9 bg-white p-4 sm:scroll-mt-0 lg:p-24"
     >
       <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         <div className="text-center">
