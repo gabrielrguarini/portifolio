@@ -27,7 +27,7 @@ export default function Contact() {
           abaixo. Entrarei em contato com você o mais breve possível
         </p>
       </div>
-      <div className="mt-32 flex justify-center gap-20">
+      <div className="mt-32 flex max-w-full justify-center gap-10 sm:gap-20">
         <a
           href="https://www.linkedin.com/in/gabriel-guarini-832768111/"
           target="_blank"
