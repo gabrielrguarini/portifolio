@@ -46,7 +46,7 @@ export default function Contact() {
             size={80}
           />
         </a>
-        <a href="">
+        <a>
           <MailIcon
             className="cursor-pointer duration-300 hover:-translate-y-2 hover:scale-110 hover:text-blue-700"
             size={80}
