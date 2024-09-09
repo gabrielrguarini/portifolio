@@ -6,8 +6,15 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "selector",
   theme: {
     extend: {
+      colors: {
+        "dark-primary": "#121214",
+        "dark-secondary": "#1D1D21",
+        "white-primary": "#E1E1E6",
+      },
+
       backgroundImage: {
         hero: `url("/background.avif")`,
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

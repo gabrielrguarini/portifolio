@@ -3,11 +3,13 @@ import { ChevronLeft, ChevronRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({ isDark }: { isDark: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 top-0 z-10 flex w-full items-center justify-between bg-white p-4 font-bold shadow-sm">
+    <header
+      className={`${isDark ? "text-white-primary bg-dark-secondary" : "bg-white"} fixed left-0 top-0 z-10 flex w-full items-center justify-between p-4 font-bold shadow-sm`}
+    >
       <Link
         className="group flex font-extrabold duration-500 ease-out hover:scale-95 lg:text-3xl"
         href={"#"}
@@ -30,7 +32,7 @@ export default function Header() {
           {isOpen ? <X /> : <Menu />}
         </button>
         {isOpen && (
-          <ul className="fixed right-0 top-14 w-screen animate-menu list-none bg-white px-4 text-end shadow sm:hidden">
+          <ul className="fixed right-0 top-14 w-screen animate-menu list-none px-4 text-end shadow sm:hidden">
             <Link href={"#INICIO"}>
               <li
                 onClick={() => setIsOpen(false)}

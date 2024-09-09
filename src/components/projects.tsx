@@ -40,12 +40,12 @@ export default function Projects() {
   return (
     <section
       id="PROJETOS"
-      className="min-h-screen w-full scroll-mt-10 p-4 sm:scroll-mt-0 lg:p-24"
+      className="dark:bg-dark-primary dark:text-white-primary min-h-screen w-full scroll-mt-10 p-4 sm:scroll-mt-0 lg:p-24"
     >
       <div className="text-center">
         <h2 className="text-center text-4xl font-bold">PROJETOS</h2>
         <div className="mx-auto my-2 h-1 w-10 rounded-full bg-blue-700"></div>
-        <p className="m-auto max-w-4xl text-xl text-gray-600">
+        <p className="dark:text-white-primary m-auto max-w-4xl text-xl text-gray-600">
           Aqui você encontrará alguns dos projetos que criei como desafio
           técnico e hobby.
         </p>
@@ -76,7 +76,7 @@ export default function Projects() {
               <div className="flex h-full flex-col justify-between gap-8">
                 <div>
                   <h3 className="text-3xl font-bold">{project.name}</h3>
-                  <p className="py-4 text-justify leading-6 text-gray-600">
+                  <p className="dark:text-white-primary py-4 text-justify leading-6 text-gray-600">
                     {project.description}
                   </p>
                   <ul
@@ -85,7 +85,7 @@ export default function Projects() {
                     data-aos-duration="1000"
                     data-aos-once="true"
                     data-aos-anchor-placement="top-bottom"
-                    className="flex flex-wrap text-xl text-gray-600"
+                    className="dark:text-dark-primary flex flex-wrap text-xl text-gray-600"
                   >
                     {project.skills.map((skill, index) => {
                       return (
