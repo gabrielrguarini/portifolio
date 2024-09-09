@@ -32,7 +32,9 @@ export default function Header({ isDark }: { isDark: boolean }) {
           {isOpen ? <X /> : <Menu />}
         </button>
         {isOpen && (
-          <ul className="fixed right-0 top-14 w-screen animate-menu list-none px-4 text-end shadow sm:hidden">
+          <ul
+            className={`${isDark ? "bg-dark-secondary" : "bg-white"} fixed right-0 top-14 w-screen animate-menu list-none px-4 text-end shadow sm:hidden`}
+          >
             <Link href={"#INICIO"}>
               <li
                 onClick={() => setIsOpen(false)}
