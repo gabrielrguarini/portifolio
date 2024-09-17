@@ -1,11 +1,11 @@
 "use client";
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import DarkModeButton from "@/components/dark-mode-button";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import Hero from "@/components/hero";
-import Projects from "@/components/projects";
+import About from "@/_components/about";
+import Contact from "@/_components/contact";
+import DarkModeButton from "@/_components/dark-mode-button";
+import Footer from "@/_components/footer";
+import Header from "@/_components/header";
+import Hero from "@/_components/hero";
+import Projects from "@/_components/projects";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
