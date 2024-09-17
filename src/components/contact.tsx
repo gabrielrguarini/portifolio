@@ -31,10 +31,7 @@ export default function Contact() {
         </p>
       </div>
       <div className="mt-32 flex max-w-full justify-center gap-10 sm:gap-20">
-        <a
-          href="https://www.linkedin.com/in/gabriel-guarini-832768111/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/gabriel-guarini/" target="_blank">
           <LinkedinIcon
             className="cursor-pointer duration-300 hover:-translate-y-2 hover:scale-110 hover:text-blue-700"
             size={80}
