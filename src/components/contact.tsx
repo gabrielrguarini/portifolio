@@ -19,13 +19,13 @@ export default function Contact() {
   return (
     <section
       id="CONTATO"
-      className="dark:bg-dark-secondary dark:text-white-primary min-h-screen w-full scroll-mt-9 p-4 sm:scroll-mt-0 lg:p-24"
+      className="min-h-screen w-full scroll-mt-9 p-4 sm:scroll-mt-0 lg:p-24 dark:bg-dark-secondary dark:text-white-primary"
     >
       {isCopy && <Toast />}
       <div className="text-center">
         <h2 className="text-center text-4xl font-bold">CONTATO</h2>
         <div className="mx-auto my-2 h-1 w-10 rounded-full bg-blue-700"></div>
-        <p className="dark:text-white-primary m-auto max-w-3xl text-xl text-gray-600">
+        <p className="m-auto max-w-3xl text-xl text-gray-600 dark:text-white-primary">
           Você pode entrar em contato comigo em qualquer uma das redes sociais
           abaixo. Entrarei em contato com você o mais breve possível
         </p>
@@ -52,7 +52,7 @@ export default function Contact() {
             size={80}
             onClick={(e) => {
               navigator.clipboard
-                .writeText("gabrielrguarini@gmail.com")
+                .writeText(EMAIL)
                 .then(() => {
                   setIsCopy(true);
                   setTimeout(() => {
