@@ -8,7 +8,7 @@ export default function Footer() {
           href="https://github.com/gabrielrguarini"
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold underline"
+          className="font-semibold underline hover:text-blue-700"
         >
           Gabriel Guarini
         </a>
