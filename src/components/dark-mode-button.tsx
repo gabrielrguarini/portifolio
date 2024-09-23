@@ -12,6 +12,7 @@ export default function DarkModeButton({
     <button
       onClick={() => setIsDark(!isDark)}
       className="fixed bottom-2 right-2 rounded-full border-2 border-black bg-white p-2 dark:bg-dark-secondary dark:text-white-primary"
+      aria-label="Mudar tema"
     >
       {isDark ? <Sun /> : <Moon />}
     </button>

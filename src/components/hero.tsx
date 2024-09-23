@@ -30,7 +30,11 @@ export default function Hero({ isDark }: { isDark: boolean }) {
         >
           Um portifólio mostrando um pouco sobre mim e meus projetos.
         </p>
-        <Link className="m-auto animate-bounce" href="#SOBRE">
+        <Link
+          className="m-auto animate-bounce"
+          href="#SOBRE"
+          aria-label="Seta para baixo que vai para seção sobre"
+        >
           <ChevronDown size={100} />
         </Link>
       </section>
