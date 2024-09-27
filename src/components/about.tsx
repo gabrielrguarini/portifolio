@@ -17,17 +17,18 @@ export default function About() {
     "Storybook",
     "Jest",
     "Git",
+    "Socket.io",
   ];
   return (
     <section
       id="SOBRE"
-      className="dark:bg-dark-secondary min-h-screen scroll-mt-9 bg-white p-4 sm:scroll-mt-0 lg:p-24"
+      className="min-h-screen scroll-mt-9 bg-white p-4 sm:scroll-mt-0 lg:p-24 dark:bg-dark-secondary"
     >
       <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         <div className="text-center">
           <h2 className="text-center text-4xl font-bold">SOBRE MIM</h2>
           <div className="mx-auto my-2 h-1 w-10 rounded-full bg-blue-700"></div>
-          <p className="dark:text-white-primary m-auto max-w-3xl text-xl text-gray-600">
+          <p className="m-auto max-w-3xl text-xl text-gray-600 dark:text-white-primary">
             Aqui você pode ver mais informações sobre mim e minhas habilidades
             atuais em programação.
           </p>
@@ -35,7 +36,7 @@ export default function About() {
         <div className="flex flex-col gap-14 lg:m-8 lg:flex-row">
           <div className="lg:w-1/2">
             <h3 className="my-4 text-3xl font-bold">Um pouco sobre mim</h3>
-            <p className="dark:text-white-primary text-justify text-xl leading-8 text-gray-600">
+            <p className="text-justify text-xl leading-8 text-gray-600 dark:text-white-primary">
               Sou um Desenvolvedor de Softwaree apaixonado por tecnologia.
               Construo Aplicações Web focado em extrair e implementar as
               melhores ideias. Você pode conferir alguns dos meus Projetos na
@@ -70,7 +71,7 @@ export default function About() {
               data-aos-delay="500"
               data-aos-duration="1000"
               data-aos-once="true"
-              className="dark:text-dark-primary flex flex-wrap text-xl text-gray-600"
+              className="flex flex-wrap text-xl text-gray-600 dark:text-dark-primary"
             >
               {skills.map((skill, i) => {
                 return (
