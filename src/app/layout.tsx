@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
         id="INICIO"
         className={`!scroll-smooth ${inter.className} scrollbar scrollbar-track-inherit scrollbar-thumb-blue-700 scrollbar-thumb-rounded-full scrollbar-w-2`}
       >
+        <Analytics />
         {children}
       </body>
     </html>
