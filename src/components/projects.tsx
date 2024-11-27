@@ -3,9 +3,18 @@ import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
+      name: "Finance AI",
+      description:
+        "Uma plataforma para organizar finanças pessoais ou empresariais, agrupando gastos por categorias e métodos de pagamento. Conta com relatórios gerados por IA para oferecer insights financeiros personalizados. ",
+      img: "/finance-ai.avif",
+      link: "https://finance-ai-gray.vercel.app/",
+      github: "https://github.com/gabrielrguarini/finance-ai",
+      skills: ["React", "Typescript", "Next.js", "Tailwind", "Stripe", "Clerk"],
+    },
+    {
       name: "Mimica",
       description:
-        "Um jogo de mímica em que a proposta é se divertir com os amigos. Nele duas equipes são formadas e palavras são mostradas aleatoriamente na tela o objetivo é que seu time acerte a palavra pela mímica. Foi desenvolvido de modo que o usuário pode escolher entre os temas Dark e Light e também customizar o tempo máximo para se fazer a mímica.",
+        "Um jogo divertido para aproveitar com amigos, onde duas equipes competem adivinhando palavras exibidas aleatoriamente na tela através de mímicas. O usuário pode personalizar o tempo para cada rodada e escolher entre os temas Dark e Light, tornando a experiência ainda mais imersiva.",
       img: "/mimica.avif",
       link: "https://mimica-five.vercel.app/",
       github: "https://github.com/gabrielrguarini/mimica",
@@ -40,12 +49,12 @@ export default function Projects() {
   return (
     <section
       id="PROJETOS"
-      className="dark:bg-dark-primary dark:text-white-primary min-h-screen w-full scroll-mt-10 p-4 sm:scroll-mt-0 lg:p-24"
+      className="min-h-screen w-full scroll-mt-10 p-4 sm:scroll-mt-0 lg:p-24 dark:bg-dark-primary dark:text-white-primary"
     >
       <div className="text-center">
         <h2 className="text-center text-4xl font-bold">PROJETOS</h2>
         <div className="mx-auto my-2 h-1 w-10 rounded-full bg-blue-700"></div>
-        <p className="dark:text-white-primary m-auto max-w-4xl text-xl text-gray-600">
+        <p className="m-auto max-w-4xl text-xl text-gray-600 dark:text-white-primary">
           Aqui você encontrará alguns dos projetos que criei como desafio
           técnico e hobby.
         </p>
@@ -76,7 +85,7 @@ export default function Projects() {
               <div className="flex h-full flex-col justify-between gap-8">
                 <div>
                   <h3 className="text-3xl font-bold">{project.name}</h3>
-                  <p className="dark:text-white-primary py-4 text-justify leading-6 text-gray-600">
+                  <p className="py-4 text-justify leading-6 text-gray-600 dark:text-white-primary">
                     {project.description}
                   </p>
                   <ul
@@ -85,7 +94,7 @@ export default function Projects() {
                     data-aos-duration="1000"
                     data-aos-once="true"
                     data-aos-anchor-placement="top-bottom"
-                    className="dark:text-dark-primary flex flex-wrap text-xl text-gray-600"
+                    className="flex flex-wrap text-xl text-gray-600 dark:text-dark-primary"
                   >
                     {project.skills.map((skill, index) => {
                       return (
