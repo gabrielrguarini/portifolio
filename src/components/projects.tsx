@@ -6,7 +6,7 @@ export default function Projects() {
       name: "Finance AI",
       description:
         "Uma plataforma para organizar finanças pessoais ou empresariais, agrupando gastos por categorias e métodos de pagamento. Conta com relatórios gerados por IA para oferecer insights financeiros personalizados. ",
-      img: "/finance-ai.avif",
+      img: "/finance-ai.png",
       link: "https://finance-ai-gray.vercel.app/",
       github: "https://github.com/gabrielrguarini/finance-ai",
       skills: ["React", "Typescript", "Next.js", "Tailwind", "Stripe", "Clerk"],
