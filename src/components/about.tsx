@@ -18,6 +18,8 @@ export default function About() {
     "Jest",
     "Git",
     "Socket.io",
+    "Stripe",
+    "Clerk",
   ];
   return (
     <section
